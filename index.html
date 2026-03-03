@@ -22,7 +22,6 @@
       color: #2d3436;
     }
 
-    /* NAVBAR */
     .navbar {
       background-color: var(--primary-dark);
       padding: 15px 5%;
@@ -33,7 +32,6 @@
 
     .logo-img {
       height: 70px;
-      width: auto;
     }
 
     .nav-links a {
@@ -47,11 +45,10 @@
       color: var(--accent-gold);
     }
 
-    /* HERO */
     .hero {
       text-align: center;
       padding: 120px 20px;
-      background: linear-gradient(rgba(11, 30, 60, 0.9), rgba(11, 30, 60, 0.95));
+      background: linear-gradient(rgba(11,30,60,0.9), rgba(11,30,60,0.95));
       color: #fff;
     }
 
@@ -76,7 +73,37 @@
       display: inline-block;
     }
 
-    /* CONTACT */
+    .section {
+      padding: 80px 5%;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: var(--primary-dark);
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .card-box h4 {
+      margin-bottom: 15px;
+      color: var(--primary-dark);
+    }
+
     .contact {
       background-color: var(--primary-dark);
       color: #fff;
@@ -90,7 +117,6 @@
       font-weight: 600;
     }
 
-    /* FOOTER */
     .footer {
       background-color: #051024;
       color: rgba(255,255,255,0.6);
@@ -99,7 +125,6 @@
       font-size: 0.85rem;
     }
 
-    /* MOBILE */
     @media (max-width: 768px) {
       .navbar {
         flex-direction: column;
@@ -122,6 +147,8 @@
   <nav class="navbar">
     <img src="logo.png" alt="AIAI Cards Logo" class="logo-img">
     <div class="nav-links">
+      <a href="#grading">Grading</a>
+      <a href="#marketplace">Marketplace</a>
       <a href="#contact">Contact</a>
     </div>
   </nav>
@@ -131,16 +158,55 @@
     <p>
       Professional grading and secure marketplace services for Pokémon and One Piece collectors.
     </p>
-    <a href="#contact" class="btn-primary">Submit Your Cards</a>
+    <a href="#grading" class="btn-primary">Explore Services</a>
   </section>
 
+  <!-- GRADING SECTION -->
+  <section id="grading" class="section">
+    <h3>Professional Grading Services</h3>
+    <div class="cards-grid">
+      <div class="card-box">
+        <h4>Bulk Submission</h4>
+        <p>Affordable grading for collectors submitting multiple cards at once.</p>
+      </div>
+      <div class="card-box">
+        <h4>Standard Grading</h4>
+        <p>Professional evaluation with secure encapsulation and certification number.</p>
+      </div>
+      <div class="card-box">
+        <h4>Express Service</h4>
+        <p>Fast-track grading for high-value and urgent submissions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARKETPLACE SECTION -->
+  <section id="marketplace" class="section" style="background-color:#f4f6f9;">
+    <h3>Marketplace</h3>
+    <div class="cards-grid">
+      <div class="card-box">
+        <h4>Buy Certified Cards</h4>
+        <p>Purchase graded Pokémon and One Piece cards with verified certification.</p>
+      </div>
+      <div class="card-box">
+        <h4>Sell Your Cards</h4>
+        <p>List your graded cards and connect with serious collectors.</p>
+      </div>
+      <div class="card-box">
+        <h4>Secure Transactions</h4>
+        <p>Safe and transparent buying experience for all users.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
   <section id="contact" class="contact">
     <h3>Contact Our Team</h3>
     <p>Submission Hotline 1: <a href="tel:+60107777176">+6010-777 7176</a></p>
     <p>Submission Hotline 2: <a href="tel:+601137330064">+6011-3733 0064</a></p>
     <p>
       Facebook:
-      <a href="https://www.facebook.com/profile.php?id=61588055021024" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.facebook.com/profile.php?id=61588055021024" target="_blank">
         AIAI Cards Official
       </a>
     </p>
