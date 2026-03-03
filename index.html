@@ -2,129 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AIAI Cards | Marketplace & Grading</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AIAI Cards - Pokemon & One Piece card marketplace and grading service.">
+  <title>AIAI Cards | Premium Card Grading & Marketplace</title>
+  <meta name="description" content="AIAI Cards - The premier destination for Pokemon and One Piece card authentication, grading, and secure trading.">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      --primary-dark: #0b1e3c;
+      --accent-gold: #c5a059;
+      --bg-gray: #fdfdfd;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #ffffff;
-      color: #111;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-gray);
+      color: #2d3436;
     }
 
     /* NAVBAR */
     .navbar {
-      background-color: #0b1e3c;
-      color: #fff;
-      padding: 16px 40px;
+      background-color: var(--primary-dark);
+      padding: 15px 5%;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    .navbar h1 {
-      margin: 0;
-      font-size: 22px;
+    .logo-img {
+      height: 70px;
+      width: auto;
     }
 
-    .navbar a {
+    .nav-links a {
       color: #fff;
       text-decoration: none;
-      margin-left: 25px;
-      font-size: 15px;
+      margin-left: 20px;
+      font-weight: 500;
     }
 
-    .navbar a:hover {
-      color: #c4161c;
+    .nav-links a:hover {
+      color: var(--accent-gold);
     }
 
-    /* HERO SECTION */
+    /* HERO */
     .hero {
       text-align: center;
-      padding: 100px 20px;
-      background: linear-gradient(135deg, #0b1e3c, #123a8f);
+      padding: 120px 20px;
+      background: linear-gradient(rgba(11, 30, 60, 0.9), rgba(11, 30, 60, 0.95));
       color: #fff;
     }
 
     .hero h2 {
-      font-size: 36px;
+      font-size: 2.8rem;
       margin-bottom: 20px;
     }
 
     .hero p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: auto;
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
     }
 
-    /* SERVICES */
-    .services {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .services h3 {
-      font-size: 28px;
-      margin-bottom: 40px;
-    }
-
-    .service-box {
-      max-width: 900px;
-      margin: auto;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-    .card {
-      width: 280px;
-      padding: 25px;
-      margin: 15px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-    }
-
-    .card h4 {
-      margin-bottom: 15px;
-      color: #0b1e3c;
+    .btn-primary {
+      background-color: var(--accent-gold);
+      color: var(--primary-dark);
+      padding: 14px 36px;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 4px;
+      display: inline-block;
     }
 
     /* CONTACT */
     .contact {
-      background-color: #f4f4f4;
-      padding: 40px 20px;
+      background-color: var(--primary-dark);
+      color: #fff;
+      padding: 60px 5%;
       text-align: center;
     }
 
     .contact a {
-      color: #c4161c;
+      color: var(--accent-gold);
       text-decoration: none;
+      font-weight: 600;
     }
 
     /* FOOTER */
     .footer {
-      background-color: #0b1e3c;
-      color: #fff;
+      background-color: #051024;
+      color: rgba(255,255,255,0.6);
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
+      padding: 25px;
+      font-size: 0.85rem;
     }
 
     /* MOBILE */
     @media (max-width: 768px) {
-      .service-box {
-        flex-direction: column;
-        align-items: center;
-      }
-
       .navbar {
         flex-direction: column;
       }
 
-      .navbar div {
-        margin-top: 10px;
+      .logo-img {
+        height: 60px;
+        margin-bottom: 10px;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
       }
     }
   </style>
@@ -132,71 +119,36 @@
 
 <body>
 
-  <!-- NAVIGATION -->
-  <div class="navbar">
-    <h1>AIAI Cards</h1>
-    <div>
-      <a href="#">Marketplace</a>
-      <a href="#">Grading</a>
-      <a href="#">Contact</a>
+  <nav class="navbar">
+    <img src="logo.png" alt="AIAI Cards Logo" class="logo-img">
+    <div class="nav-links">
+      <a href="#contact">Contact</a>
     </div>
-  </div>
+  </nav>
 
-  <!-- HERO -->
   <section class="hero">
-    <h2>Global Platform for Serious Card Collectors</h2>
+    <h2>The Gold Standard in Card Authentication</h2>
     <p>
-      Buy, sell and grade Pokémon & One Piece cards securely with AIAI Cards.
+      Professional grading and secure marketplace services for Pokémon and One Piece collectors.
     </p>
+    <a href="#contact" class="btn-primary">Submit Your Cards</a>
   </section>
 
-  <!-- SERVICES -->
-  <section class="services">
-    <h3>Our Services</h3>
-
-    <div class="service-box">
-
-      <div class="card">
-        <h4>Marketplace</h4>
-        <p>
-          Buy and sell authentic Pokémon and One Piece trading cards with verified sellers.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>Professional Grading</h4>
-        <p>
-          Submit your cards for grading. Transparent evaluation, secure handling and certification.
-        </p>
-      </div>
-
-      <div class="card">
-        <h4>Certificate Verification</h4>
-        <p>
-          Verify graded cards using our official certificate number lookup system.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact">
-    <h3>Contact Us</h3>
-    <p>📞 +6010-777 7176</p>
-    <p>📞 +6011-3733 0064</p>
+  <section id="contact" class="contact">
+    <h3>Contact Our Team</h3>
+    <p>Submission Hotline 1: <a href="tel:+60107777176">+6010-777 7176</a></p>
+    <p>Submission Hotline 2: <a href="tel:+601137330064">+6011-3733 0064</a></p>
     <p>
       Facebook:
-      <a href="https://www.facebook.com/profile.php?id=61588055021024" target="_blank">
+      <a href="https://www.facebook.com/profile.php?id=61588055021024" target="_blank" rel="noopener noreferrer">
         AIAI Cards Official
       </a>
     </p>
   </section>
 
-  <!-- FOOTER -->
-  <div class="footer">
-    © 2026 AIAI Cards. All rights reserved.
-  </div>
+  <footer class="footer">
+    © 2026 AIAI Cards. All Rights Reserved.
+  </footer>
 
 </body>
 </html>
